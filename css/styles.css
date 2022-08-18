@@ -31,13 +31,13 @@ body {
     font-size: 16px;
     font-family: "Roboto", "Raleway", sans-serif;
 }
-.border-line {
+.page-header--line {
     border-bottom: 1px solid var(--first)
 }
 .page-header {
     display: flex;
 }
-.logo {
+.page-header__logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -48,22 +48,22 @@ body {
     padding-top: 24px;
     padding-bottom: 25px;
 }
-.email {
+.contact__icon--email {
         width: 26px;
         height: 12px;
     padding-right: 10px;
     fill: var(--grey);
 }
-.smartphone {
+.contact__icon--smartphone {
     padding-right: 10px;
     fill: var(--grey);
         width: 20px;
         height: 16px;
 }
-.studio {
+.page-header__logo--color {
     color: var(--black)
 }
-.menu a {
+.nav a {
     font-weight: 500;
     color: var(--dark);
     font-size: 14px;
@@ -71,13 +71,13 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
 }
-.menu {
+.nav {
     list-style: none;
     display: flex;
     padding-left: 93px;
     padding-top: 32px;
 }
-.hover-link {
+.nav__blue-text {
     padding-right: 46px;
 }
 .effect {
@@ -94,26 +94,28 @@ body {
     width: 100%;
     left:0;
 }
-.permalink-telephone {
+.contact__link {
     padding-left: 50px;
 }
-.permalink:hover,
-.permalink:focus,
-.menu a:focus,
-.menu a:hover,
-.write a:hover,
-.write a:focus {
+.nav__link:hover,
+.nav__link:focus,
+.address__mail--effect,
+.address__telephone--effect,
+.nav a:focus,
+.nav a:hover,
+.contact a:hover,
+.contact a:focus {
     color: var(--blue);
     transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-.write a:hover svg,
-.write a:focus svg {
+.contact a:hover svg,
+.contact a:focus svg {
     fill: var(--blue);
         transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.write a {
+.contact a {
     font-weight: 500;
     color: var(--grey);
     text-decoration: none;
@@ -122,7 +124,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-.write {
+.contact {
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
@@ -132,16 +134,17 @@ body {
     margin-left: auto;
     align-items: center;
 }
-.color {
+.page-footer__logo--color {
     color: var(--white)
 }
-.contact {
+
+.address {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.contact a {
+.address a {
     font-weight: 500;
     color: var(--grey);
     text-decoration: none;
@@ -309,7 +312,7 @@ body {
     text-align: center;
     margin-bottom: 16px;
 }
-.socialmedia-link {
+.socialmedia__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -317,8 +320,8 @@ body {
     display: block;
     background: var(--socialmedia);
 }
-.socialmedia-link:hover,
-.socialmedia-link:focus {
+.socialmedia__link:hover,
+.socialmedia__link:focus {
     fill: var(--white);
     background: var(--blue);
         transition-duration: 250ms;
@@ -347,23 +350,38 @@ body {
         transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.end {
+.page-footer {
     font-size: 14px;
     color: var(--end);
     padding: 60px;
     background: var(--second);
 }
-.footer-socialmedia {display: flex;}
-.footer-address {
+.page-footer__socialmedia {display: flex;}
+.address__list {
     list-style: none;
 }
-.address-list {
+.page-footer__logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--blue);
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.address__city {
     padding-top: 20px;
 }
-.mail {
+.address__mail {
     padding-top: 9px;
 }
-.invitation {
+.address__telephone {
+        padding-top: 20px;
+    }
+
+.heading {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
@@ -414,12 +432,12 @@ font-weight: 700;
 .background {
     padding: 94px;
 }
-.button-list {
+.button {
     display: flex;
     justify-content: center;
     list-style: none;
 }
-.click {
+.button__list {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -432,7 +450,7 @@ font-weight: 700;
     padding: 6px 22px;
     margin-bottom: 50px;
 }
-.click:hover {
+.button__list:hover {
     background-color: var(--blue);
     color: var(--white);
     cursor: pointer;
@@ -440,30 +458,30 @@ font-weight: 700;
         transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.description-img {
+.portfolio {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.description-img .img{
+.portfolio .portfolio__page{
     display: flex;
     background: var(--white);
 }
-.img:hover {
+.portfolio__page:hover {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.description-img .img{
+.portfolio .portfolio__page{
     position: relative;
     overflow: hidden;
 }
-.img:hover .overlay {
+.portfolio__page:hover .portfolio__background {
     transform: translatey(0);
 }
-.border {
+.img {
     border-left: 1px solid var(--fourth);
     border-right: 1px solid var(--fourth);
     border-bottom: 1px solid var(--fourth);
@@ -471,28 +489,28 @@ font-weight: 700;
     position: relative;
     background-color: var(--white);
 }
-.image-name {
+.img__name {
     letter-spacing: 0.03em;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     color: var(--dark);
 }
-.about-img {
+.img__description {
     color: var(--grey);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     padding-top: 8px;
 }
-.text-visable{
+.portfolio__description{
 font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: var(--white);
     width: 301px;
 }
-.overlay{
+.portfolio__background{
     background: var(--blue);
     position: absolute;
     padding: 49px 45px 49px 24px;
@@ -504,7 +522,7 @@ font-size: 18px;
     transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay:hover {
+.portfolio__background:hover {
     transform: translateX(0)
 }
 
