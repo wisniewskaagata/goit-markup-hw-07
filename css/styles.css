@@ -181,7 +181,7 @@ body {
     border-radius: 0px;
     margin-bottom: 30px;
 }
-.service {
+.tittle__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.85;
@@ -197,15 +197,15 @@ body {
     border: none;
     margin-bottom: 114px;
 }
-.section-lorem {
+.section-description {
     padding-top: 94px;
 }
-.icons {
+.icon__gallery {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
-.poem {
+.icon__tittle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -213,7 +213,7 @@ body {
     text-transform: uppercase;
     color: var(--dark);
 }
-.lorem {
+.icon__description {
     color: var(--grey);
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -221,7 +221,7 @@ body {
     text-transform: none;
     padding-top: 10px;
 }
-.description {
+.icon {
     list-style: none;
     display: flex;
     gap: 30px;
@@ -276,14 +276,14 @@ body {
     padding: 94px;
     background: var(--third);
 }
-.team {
+.company {
     font-size: 36px;
     line-height: 1.17px;
     letter-spacing: 0.03em;
     text-align: center;
     padding-bottom: 50px;
 }
-.company {
+.company-second {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -327,13 +327,15 @@ body {
         transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company-icon {
+
+.company__list {
     list-style: none;
         display: flex;
         fill: var(--social);
         gap: 30px;
+        justify-content: space-between;
 }
-.client {
+.client__icon {
     width: 170px;
         height: 92px;
         border: 1px solid #afb1b8;
@@ -342,8 +344,8 @@ body {
         justify-content: center;
         display: flex;
 }
-.client:hover,
-.client:focus {
+.client__icon:hover,
+.client__icon:focus {
     fill: var(--blue);
     border-color: var(--blue);
     cursor: pointer;
@@ -378,7 +380,7 @@ body {
     padding-top: 9px;
 }
 .address__telephone {
-        padding-top: 20px;
+    padding-top: 9px;
     }
 
 .heading {
@@ -407,12 +409,22 @@ body {
     right: 24px;
     top:13px;
     }
-.sign-in-text {
+.sign-in__text {
     position: absolute;
     left:42px;
     top:10px;
 }
-.sign-in-button{
+.sign-in__email {
+    margin-left: 68px;
+    background-color: var(--second);
+    padding: 16px 15px;
+    width: 358px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.sign-in__button{
 font-weight: 700;
     font-size: 16px;
     line-height: 1.87;

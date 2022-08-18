@@ -12,75 +12,75 @@
 </head>
 
 <body>
-  <header class="border-line">
-    <div class="page-header container">
-      <a class="logo" href="index.html"><span>Web</span><span class="studio">Studio</span></a>
-      <nav>
-        <ul class="menu">
-          <li class="hover-link"><a class="permalink effect" href="index.html">Agencja</a></li>
-          <li class="hover-link"><a class="permalink" href="portfolio.html">Portfolio</a></li>
-          <li><a class="permalink-contact" href="kontakt">Kontakt</a></li>
-        </ul>
-      </nav>
-      <ul class="write">
-        <li class="hover-contact"><a href="mailto:info@devstudio.com">
-            <svg class="email" width="16" height="12">
-              <use href="./images/sprite.svg#icon-email"></use>
-            </svg>info@devstudio.com</a></li>
-        <li><a class="permalink-telephone" href="tel:+048111111111"> <svg class="smartphone" width="10" height="16">
-              <use href="./images/sprite.svg#icon-smartphone"></use>
-            </svg>+048 111 111 111</a></li>
+<header class="page-header--line">
+  <div class="page-header container">
+    <a class="page-header__logo" href="index.html"><span>Web</span><span class="page-header__logo--color">Studio</span></a>
+    <nav>
+      <ul class="nav">
+        <li class="nav__blue-text"><a class="permalink effect" href="index.html">Agencja</a></li>
+        <li class="nav__blue-text"><a class="permalink" href="portfolio.html">Portfolio</a></li>
+        <li><a href="kontakt">Kontakt</a></li>
       </ul>
-    </div>
-  </header>
+    </nav>
+    <ul class="contact">
+      <li><a href="mailto:info@devstudio.com">
+          <svg class="contact__icon--email" width="16" height="12">
+            <use href="./images/sprite.svg#icon-email"></use>
+          </svg>info@devstudio.com</a></li>
+      <li><a class="contact__link" href="tel:+048111111111"> <svg class="contact__icon--smartphone" width="10" height="16">
+            <use href="./images/sprite.svg#icon-smartphone"></use>
+          </svg>+048 111 111 111</a></li>
+    </ul>
+  </div>
+</header>
 
   <main>
     <section class="section-tittle">
       <div class="container">
         <h1 class="tittle">EFEKTYWNE ROZWIĄZANIA <br /> DLA WASZEGO BIZNESU</h1>
-        <button class="service" type="button" data-modal-open>Zamów usługę</button>
+        <button class="tittle__button" type="button" data-modal-open>Zamów usługę</button>
       </div>
       </div>
     </section>
-    <section class="section-lorem">
+    <section class="section-description">
       <div class="container">
-        <ul class="description">
+        <ul class="icon">
           <li>
-            <div class="icons"><svg width="270" height="120">
+            <div class="icon__gallery"><svg width="270" height="120">
                 <use href="./images/sprite.svg#icon-aerial" alt:ludzie pracujący przy projekcie auta></use>
               </svg></div>
-            <h2 class="poem">LOREM IPSUM</h2>
-            <p class="lorem">
+            <h2 class="icon__tittle">LOREM IPSUM</h2>
+            <p class="icon__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
               dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="icons"><svg width="270" height="120">
+            <div class="icon__gallery"><svg width="270" height="120">
                 <use href="./images/sprite.svg#icon-clock"></use>
               </svg></div>
-            <h2 class="poem">LOREM IPSUM</h2>
-            <p class="lorem">
+            <h2 class="icon__tittle">LOREM IPSUM</h2>
+            <p class="icon__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
               dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="icons"><svg width="270" height="120">
+            <div class="icon__gallery"><svg width="270" height="120">
                 <use href="./images/sprite.svg#icon-computer"></use>
               </svg></div>
-            <h2 class="poem">LOREM IPSUM</h2>
-            <p class="lorem">
+            <h2 class="icon__tittle">LOREM IPSUM</h2>
+            <p class="icon__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
               dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="icons"><svg width="270" height="120">
+            <div class="icon__gallery"><svg width="270" height="120">
                 <use href="./images/sprite.svg#icon-astronaut"></use>
               </svg></div>
-            <h2 class="poem">LOREM IPSUM</h2>
-            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
+            <h2 class="icon__tittle">LOREM IPSUM</h2>
+            <p class="icon__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
               dui. Interdum et malesuada</p>
           </li>
         </ul>
@@ -106,8 +106,8 @@
 
     <section class="section-team">
       <div class="container">
-        <h2 class="team">Nasz zespół</h2>
-        <ul class="company">
+        <h2 class="company">Nasz zespół</h2>
+        <ul class="company-second">
           <li class="card">
             <figure>
               <img src="images/product.jpg" alt="Osoba będąca product designerem w firmie" width="270" height="260" />
@@ -206,65 +206,68 @@
     </section>
     <section class="section">
       <div class="container">
-        <h2 class="team">Nasi klienci</h2>
-        <ul class="company company-icon">
-          <li><a href="company" class="client"><svg width="41" height="47">
+        <h2 class="company">Nasi klienci</h2>
+        <ul class="company__list">
+          <li><a href="company" class="client__icon"><svg width="41" height="47">
                 <use href="./images/sprite.svg#icon-company-1"></use>
               </svg></a></li>
-          <li><a href="company" class="client"><svg width="40" height="52">
+          <li><a href="company" class="client__icon"><svg width="40" height="52">
                 <use href="./images/sprite.svg#icon-company-2"></use>
               </svg></a></li>
-          <li><a href="company" class="client"><svg width="43" height="41">
+          <li><a href="company" class="client__icon"><svg width="43" height="41">
                 <use href="./images/sprite.svg#icon-company-3"></use>
               </svg></a></li>
-          <li><a href="company" class="client"><svg class="envelope" width="84" height="40">
+          <li><a href="company" class="client__icon"><svg class="envelope" width="84" height="40">
                 <use href="./images/sprite.svg#icon-company-4"></use>
               </svg></a></li>
-          <li><a href="company" class="client"><svg width="62" height="45">
+          <li><a href="company" class="client__icon"><svg width="62" height="45">
                 <use href="./images/sprite.svg#icon-company-5"></use>
               </svg></a></li>
-          <li><a href="company" class="client"><svg width="93" height="43">
+          <li><a href="company" class="client__icon"><svg width="93" height="43">
                 <use href="./images/sprite.svg#icon-company-6"></use>
               </svg></a></li>
         </ul>
       </div>
     </section>
   </main>
-  <footer class="end">
-    <div class="container footer-socialmedia">
+  <footer class="page-footer">
+    <div class="container page-footer__socialmedia">
       <div>
-        <a class="logo" href="index.html"><span>Web</span><span class="color">Studio</span></a>
-        <address class="contact">
-          <ul class="footer-address">
-            <li class="address-list">m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li class="mail"><a class="permalink" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="mail"><a class="permalink" href="tel:+048111111111">+048 111 111 111</a></li>
+        <a class="page-footer__logo" href="index.html"><span>Web</span><span
+            class="page-footer__logo--color">Studio</span></a>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__city">m. Warszawa, Aleje Jerozolimskie 21</li>
+            <li class="address__mail"><a class="address__mail--effect"
+                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="address__telephone"><a class="permalink" href="tel:+048111111111">+048 111 111 111</a></li>
           </ul>
         </address>
       </div>
       <div>
-        <h3 class="invitation">DOŁĄCZ DO NAS</h2>
+        <h3 class="heading">DOŁĄCZ DO NAS</h2>
           <ul class="socialmedia">
-            <li><a href="link" class="socialmedia-link"><svg width="20" height="20">
+            <li><a href="link" class="socialmedia__link"><svg width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg></a></li>
-            <li><a href="link" class="socialmedia-link"><svg width="20" height="20">
+            <li><a href="link" class="socialmedia__link"><svg width="20" height="20">
                   <use href="./images/sprite.svg#icon-twiiter"></use>
                 </svg></a></li>
-            <li><a href="link" class="socialmedia-link"><svg width="20" height="20">
+            <li><a href="link" class="socialmedia__link"><svg width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg></a></li>
-            <li><a href="link" class="socialmedia-link"><svg width="20" height="20">
+            <li><a href="link" class="socialmedia__link"><svg width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin-"></use>
                 </svg></a></li>
           </ul>
       </div>
       <div>
-        <h3 class="invitation">ZAPISZ SIĘ DO NEWSLETTERA</h3>
+        <h3 class="heading">ZAPISZ SIĘ DO NEWSLETTERA</h3>
         <form>
           <label>
-            <input class="sign-email" type="email" name="email" placeholder="E-mail" />
-            <button class="sign-in-button" type="Submit"><span class="sign-in-text">Zapisz się</span><svg class="sign-in" width="24" height="24">
+            <input class="sign-in__email" type="email" name="email" placeholder="E-mail" />
+            <button class="sign-in__button" type="Submit"><span class="sign-in__text">Zapisz się</span><svg class="sign-in"
+                width="24" height="24">
                 <use href="./images/sprite.svg#icon-icon-send"></use>
               </svg></button>
           </label>
