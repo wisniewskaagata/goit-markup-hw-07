@@ -150,6 +150,22 @@ body {
     text-decoration: none;
     font-size: 14px;
 }
+.socialmedia__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    display: block;
+    background: var(--socialmedia);
+}
+
+.socialmedia__link:hover,
+.socialmedia__link:focus {
+    fill: var(--white);
+    background: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -226,23 +242,23 @@ body {
     display: flex;
     gap: 30px;
 }
-.story {
+.work {
     font-size: 36px;
     line-height: 1.17;
     padding-bottom: 50px;
     text-align: center;
 }
-.image {
+.work__photos--list {
     list-style: none;
     display: flex;
     justify-content: space-between;
     height: 294px;
 }
-.thumb {
+.work__photos {
     position:relative;
     overflow:hidden;
 }
-.thumb>.label {
+.work__photos>.work__tittle {
     position: absolute;
     bottom: 0;
         right: 0;
@@ -276,25 +292,26 @@ body {
     padding: 94px;
     background: var(--third);
 }
-.company {
+.team {
     font-size: 36px;
     line-height: 1.17px;
     letter-spacing: 0.03em;
     text-align: center;
     padding-bottom: 50px;
 }
-.company-second {
+
+.team__list {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
-.card {
+.team__photos {
     background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-top: 47px;
 }
-.name {
+.team__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 2;
@@ -302,7 +319,7 @@ body {
     text-align: center;
     padding-top: 30px;
 }
-.about {
+.team__position {
     color: var(--grey);
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -312,7 +329,7 @@ body {
     text-align: center;
     margin-bottom: 16px;
 }
-.socialmedia__link {
+.social-icon__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -320,14 +337,20 @@ body {
     display: block;
     background: var(--socialmedia);
 }
-.socialmedia__link:hover,
-.socialmedia__link:focus {
+.social-icon__link:hover,
+.social-icon__link:focus {
     fill: var(--white);
     background: var(--blue);
         transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.company {
+    font-size: 36px;
+    line-height: 1.17px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 50px;
+}
 .company__list {
     list-style: none;
         display: flex;
@@ -597,7 +620,7 @@ textarea, input {
 .modal-button:hover svg{
     fill: var(--blue)
 }
-.is-hidden {
+.backdrop__hidden {
     opacity:0;
     visibility: hidden;
     pointer-events:none;
