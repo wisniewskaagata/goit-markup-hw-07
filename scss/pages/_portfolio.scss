@@ -3,11 +3,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-.portfolio .portfolio__page {
-    display: flex;
-    background: var(--white);
+    .portfolio__page {
+            display: flex;
+            background: var(--white);
+        }
+    .portfolio__page {
+            position: relative;
+            overflow: hidden;
+                }
 }
 
 .portfolio__page:hover {
@@ -17,12 +20,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio .portfolio__page {
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio__page:hover .portfolio__background {
+&:hover .portfolio__background {
     transform: translatey(0);
 }
 .img {

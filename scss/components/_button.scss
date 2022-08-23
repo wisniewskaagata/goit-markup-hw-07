@@ -19,42 +19,40 @@
     fill: var(--white);
     right: 24px;
     top: 13px;
+    &__text {
+            position: absolute;
+            left: 42px;
+            top: 10px;
+        }
+                &__email {
+                    margin-left: 68px;
+                    background-color: var(--second);
+                    padding: 16px 15px;
+                    width: 358px;
+                    margin-right: 12px;
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+                    border-radius: 4px;
+                }
+                                &__button {
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 1.87;
+                                    letter-spacing: 0.06em;
+                                    color: var(--white);
+                                    background-color: var(--blue);
+                                    cursor: pointer;
+                                    background: var(--blue);
+                                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                                    border-radius: 4px;
+                                    width: 200px;
+                                    height: 50px;
+                                    border: none;
+                                    position: absolute;
+                                    margin-bottom: 104px;
+                                }
 }
 
-.sign-in__text {
-    position: absolute;
-    left: 42px;
-    top: 10px;
-}
-
-.sign-in__email {
-    margin-left: 68px;
-    background-color: var(--second);
-    padding: 16px 15px;
-    width: 358px;
-    margin-right: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-}
-
-.sign-in__button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: var(--white);
-    background-color: var(--blue);
-    cursor: pointer;
-    background: var(--blue);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    width: 200px;
-    height: 50px;
-    border: none;
-    position: absolute;
-    margin-bottom: 104px;
-}
 .button {
     display: flex;
     justify-content: center;

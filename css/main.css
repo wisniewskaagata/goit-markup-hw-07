@@ -473,6 +473,7 @@ input {
   width: 30px;
   height: 30px;
 }
+
 .modal-button:hover {
   border: 1px solid var(--blue);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -481,6 +482,24 @@ input {
 
 .modal-button:hover svg {
   fill: var(--blue);
+}
+
+.backdrop__hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  transition: opacity 250ms linear, visibility 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  height: 100%;
 }
 
 .first-modal-text {
@@ -612,6 +631,22 @@ input {
   position: absolute;
   left: 13.5px;
   top: 29px;
+}
+
+.button-form {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: var(--blue);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  margin: 30px 124px 40px;
 }
 
 .social-icons {

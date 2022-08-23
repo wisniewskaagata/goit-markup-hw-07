@@ -755,3 +755,8 @@ textarea, input {
         border: none;
         margin: 30px 124px 40px;
 }
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
