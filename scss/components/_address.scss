@@ -7,13 +7,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    & a:hover svg,
-    & a:focus svg {
-            fill: var(--blue);
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
 }
+
+.contact a:hover svg,
+.contact a:focus svg {
+        fill: var(--blue);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 .contact {
     font-style: normal;
@@ -25,6 +26,7 @@
     margin-left: auto;
     align-items: center;
 }
+
 .address {
     font-style: normal;
     font-size: 14px;
@@ -38,6 +40,7 @@
     text-decoration: none;
     font-size: 14px;
 }
+
 .address__city {
     padding-top: 20px;
 }

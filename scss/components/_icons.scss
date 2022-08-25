@@ -1,12 +1,16 @@
-.contact__icon--email {
-    width: 26px;
-    height: 12px;
+.contact {
     padding-right: 10px;
     fill: var(--grey);
+    &__icon--email {
+        width: 26px;
+        height: 12px;
+    }
+    &__icon--smartphone {
+        width: 20px;
+        height: 16px;
+    }
 }
-.contact__icon--smartphone {
-    padding-right: 10px;
-    fill: var(--grey);
-    width: 20px;
-    height: 16px;
-}
+
+
+
+

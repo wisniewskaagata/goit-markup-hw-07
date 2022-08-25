@@ -8,10 +8,7 @@
     color: var(--blue);
     padding-top: 24px;
     padding-bottom: 25px;
-}
-.page-header__logo--color {
-    color: var(--black)
-}
-.page-footer__logo--color {
-    color: var(--white)
+    &--color {
+        color: var(--black)
+    }
 }

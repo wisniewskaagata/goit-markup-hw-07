@@ -1,16 +1,15 @@
-.work__photos--list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    height: 294px;
-}
-
 .work__photos {
     position: relative;
     overflow: hidden;
+    &--list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        height: 294px;
+    }
 }
 
-.work__photos>.work__tittle {
+.work__photos > .work__tittle {
     position: absolute;
     bottom: 0;
     right: 0;

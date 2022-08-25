@@ -502,16 +502,14 @@ font-weight: 700;
 .portfolio .portfolio__page{
     display: flex;
     background: var(--white);
+    position: relative;
+    overflow: hidden;
 }
 .portfolio__page:hover {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio .portfolio__page{
-    position: relative;
-    overflow: hidden;
 }
 .portfolio__page:hover .portfolio__background {
     transform: translatey(0);

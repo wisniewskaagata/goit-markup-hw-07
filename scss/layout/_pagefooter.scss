@@ -4,21 +4,23 @@
     padding: 60px;
     background: var(--second);
     &__socialmedia {
-            display: flex;
-        }
-                &__logo {
-                    font-family: 'Raleway';
-                    font-weight: 700;
-                    font-size: 26px;
-                    line-height: 1.19;
-                    letter-spacing: 0.03em;
-                    text-decoration: none;
-                    color: var(--blue);
-                    padding-top: 24px;
-                    padding-bottom: 25px;
-                }
+        display: flex;
+    }
+    &__logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        color: var(--blue);
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+    &__logo--color {
+        color: var(--white)
+    }
 }
-
 
 .address__list {
     list-style: none;
