@@ -566,7 +566,8 @@ font-size: 18px;
     top:50%;
     left:50%;
     width: 528px;
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     transform: translate(-50%, -50%);
     background-color: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -610,9 +611,9 @@ textarea, input {
     fill: var(--blue)
 }
 .backdrop__hidden {
-    opacity:0;
+    opacity: 0;
     visibility: hidden;
-    pointer-events:none;
+    pointer-events: none;
 }
 .backdrop {
     position: fixed;
@@ -632,9 +633,10 @@ textarea, input {
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--dark);
-        padding-top: 40px;
         padding-bottom: 12px;
+        padding-top: 40px;
 }
+
 .name-input {
         font-size: 12px;
         line-height: 1.16;
