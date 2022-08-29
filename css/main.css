@@ -203,6 +203,7 @@ body {
   padding: 6px 22px;
   margin-bottom: 50px;
 }
+
 .button:hover {
   background-color: var(--blue);
   color: var(--white);
@@ -244,16 +245,15 @@ body {
   justify-content: space-between;
 }
 
-.contact__icon--email {
-  width: 26px;
-  height: 12px;
+.contact {
   padding-right: 10px;
   fill: var(--grey);
 }
-
+.contact__icon--email {
+  width: 26px;
+  height: 12px;
+}
 .contact__icon--smartphone {
-  padding-right: 10px;
-  fill: var(--grey);
   width: 20px;
   height: 16px;
 }
@@ -371,13 +371,8 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-
 .page-header__logo--color {
   color: var(--black);
-}
-
-.page-footer__logo--color {
-  color: var(--white);
 }
 
 .modal {
@@ -607,9 +602,9 @@ input {
   margin-left: 32px;
   margin-bottom: 30px;
   gap: 10px;
-  fill: var(--social)
-  }
-.social-icon__link {
+}
+
+.social-icons__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -617,7 +612,9 @@ input {
   display: block;
   background: var(--socialmedia);
 }
-.social-icons:hover, .social-icons:focus {
+
+.social-icons:hover,
+.social-icons:focus {
   fill: var(--white);
   background: var(--blue);
   transition-duration: 250ms;
@@ -632,9 +629,11 @@ input {
   fill: var(--white);
   padding-left: 70px;
 }
+
 .socialmedia-team {
   fill: var(--social);
 }
+
 .socialmedia__link {
   width: 44px;
   height: 44px;
@@ -643,7 +642,9 @@ input {
   display: block;
   background: var(--socialmedia);
 }
-.socialmedia:hover, .socialmedia:focus {
+
+.socialmedia:hover,
+.socialmedia:focus {
   fill: var(--white);
   background: var(--blue);
   transition-duration: 250ms;
@@ -698,6 +699,13 @@ input {
   margin-bottom: 30px;
 }
 
+.work {
+  font-size: 36px;
+  line-height: 1.17;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
 .work__photos {
   position: relative;
   overflow: hidden;
@@ -748,6 +756,9 @@ input {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.page-footer__logo--color {
+  color: var(--white);
+}
 
 .address__list {
   list-style: none;
@@ -758,6 +769,20 @@ input {
 }
 .page-header--line {
   border-bottom: 1px solid var(--first);
+}
+.page-header__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--blue);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.page-header--color {
+  color: var(--black);
 }
 
 .portfolio {

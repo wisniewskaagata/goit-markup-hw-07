@@ -71,7 +71,8 @@
         padding: 6px 22px;
         margin-bottom: 50px;
     }
-    &:hover {
+    }
+    .button:hover {
         background-color: var(--blue);
         color: var(--white);
         cursor: pointer;
@@ -79,7 +80,7 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }  
-}
+
 
 
 

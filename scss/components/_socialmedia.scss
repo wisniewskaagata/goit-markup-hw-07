@@ -4,8 +4,10 @@
     margin-left: 32px;
     margin-bottom: 30px;
     gap: 10px;
-    fill: var(--social)
-    &__link {
+    
+   
+}
+    .social-icons__link {
         width: 44px;
         height: 44px;
         border-radius: 50%;
@@ -13,14 +15,14 @@
         display: block;
         background: var(--socialmedia);
     }
-    &:hover,
-    &:focus {
+    .social-icons:hover,
+    .social-icons:focus {
         fill: var(--white);
         background: var(--blue);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-}
+
 
 .socialmedia {
     list-style: none;
@@ -29,10 +31,11 @@
     gap: 10px;
     fill: var(--white);
     padding-left: 70px;
-    &-team {
+}
+    .socialmedia-team {
         fill: var(--social);
     }
-    &__link {
+    .socialmedia__link {
         width: 44px;
         height: 44px;
         border-radius: 50%;
@@ -40,14 +43,14 @@
         display: block;
         background: var(--socialmedia);
     }
-    &:hover,
-    &:focus {
+    .socialmedia:hover,
+    .socialmedia:focus {
         fill: var(--white);
         background: var(--blue);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
      }
-}
+
 
 
 

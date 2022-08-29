@@ -1,6 +1,13 @@
+.work {
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
 .work__photos {
-    position: relative;
-    overflow: hidden;
+        position: relative;
+        overflow: hidden;
     &--list {
         list-style: none;
         display: flex;
