@@ -37,11 +37,11 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-    .portfolio:hover {
+    .portfolio__page:hover {
         transform: translateX(0)
 }
 
-    .portfolio:hover .portfolio__background {
+    .portfolio__page:hover .portfolio__background {
       transform: translatey(0);
 }
 
@@ -52,14 +52,14 @@
     padding: 20px 24px;
     position: relative;
     background-color: var(--white);
-    .img__name {
+    &__name {
         letter-spacing: 0.03em;
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
         color: var(--dark);
     }
-    .img__description {
+    &__description {
         color: var(--grey);
         font-size: 16px;
         line-height: 1.5;

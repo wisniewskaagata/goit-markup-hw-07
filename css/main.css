@@ -45,7 +45,15 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-tittle {
+.section-description {
+  padding-top: 94px;
+}
+.section-team {
+  padding: 94px;
+  background: var(--third);
+}
+
+.section-title {
   background-color: var(--second);
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people.jpg);
@@ -53,13 +61,6 @@ body {
   background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 106px;
-}
-.section-description {
-  padding-top: 94px;
-}
-.section-team {
-  padding: 94px;
-  background: var(--third);
 }
 
 .heading {
@@ -129,7 +130,7 @@ body {
   padding-top: 9px;
 }
 
-.tittle__button {
+.title__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.85;
@@ -204,7 +205,7 @@ body {
   margin-bottom: 50px;
 }
 
-.button:hover {
+.button__list:hover {
   background-color: var(--blue);
   color: var(--white);
   cursor: pointer;
@@ -612,9 +613,7 @@ input {
   display: block;
   background: var(--socialmedia);
 }
-
-.social-icons:hover,
-.social-icons:focus {
+.social-icons__link:hover, .social-icons__link:focus {
   fill: var(--white);
   background: var(--blue);
   transition-duration: 250ms;
@@ -629,11 +628,9 @@ input {
   fill: var(--white);
   padding-left: 70px;
 }
-
 .socialmedia-team {
   fill: var(--social);
 }
-
 .socialmedia__link {
   width: 44px;
   height: 44px;
@@ -643,8 +640,8 @@ input {
   background: var(--socialmedia);
 }
 
-.socialmedia:hover,
-.socialmedia:focus {
+.socialmedia__link:hover,
+.socialmedia__link:focus {
   fill: var(--white);
   background: var(--blue);
   transition-duration: 250ms;
@@ -824,11 +821,11 @@ input {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio:hover {
+.portfolio__page:hover {
   transform: translateX(0);
 }
 
-.portfolio:hover .portfolio__background {
+.portfolio__page:hover .portfolio__background {
   transform: translatey(0);
 }
 
@@ -840,14 +837,14 @@ input {
   position: relative;
   background-color: var(--white);
 }
-.img .img__name {
+.img__name {
   letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--dark);
 }
-.img .img__description {
+.img__description {
   color: var(--grey);
   font-size: 16px;
   line-height: 1.5;
